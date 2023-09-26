@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Terraform init') {
             steps {
-                sh 'terraform init -migrate-state -lock=false '
+                sh 'terraform init'
             }
         }
         stage('Terraform apply') {
